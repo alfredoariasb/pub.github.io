@@ -27,7 +27,17 @@ header{
     margin-top: 30px;
     color: white;
 }
-#myModal1,#myModal2,#myModal3{
+.slider-container > * {
+    scroll-snap-align: var(--swiffy-slider-snap-align);
+    position: relative;
+    width: 100%;
+    height: 80% !important;
+    overflow-y: hidden;
+}
+.slider-indicators {
+    bottom: 35px;
+}
+#myModal1,#myModal2,#myModal3,#myModal4{
     display: none;
 }
 .myModal{
@@ -38,6 +48,26 @@ header{
     top: 10% !important;
     width: 80% !important;
 }
+.myModalxl{
+    position: fixed;
+    padding: 10px;
+    margin: 0px;
+    left: 10%;
+    top: 2% !important;
+    width: 80% !important;
+}
+#mdlcarruselcnt{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+#mdlNosotrosd1{
+    flex: 1;
+}
+#mdlNosotrosd2{
+    flex: 1;
+}
+
 .logo_pub {
     
     float: left;
@@ -166,7 +196,16 @@ input {
   .modal.open {
     display: block;
   }
-
+  .carousel-inner2 {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+  }
+  .carousel2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
 
 @media only screen and (max-width: 600px) {
     .header {

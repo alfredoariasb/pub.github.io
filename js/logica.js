@@ -32,6 +32,12 @@ function modal3o(){
 function modal3c(){
     $('#myModal3').css('display','none');
 }
+function modal4o(){
+    $('#myModal4').css('display','block');
+}
+function modal4c(){
+    $('#myModal4').css('display','none');
+}
 
 function modalContacto(){
     
